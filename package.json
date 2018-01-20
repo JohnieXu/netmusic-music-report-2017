@@ -1,0 +1,27 @@
+{
+  "name": "netmusic-music-report-2017",
+  "version": "1.0.0",
+  "description": "the netmusic music report of 2017. 网易云音乐2017年度听歌报告",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johniexu/netmusic-music-report-2017.git"
+  },
+  "keywords": [
+    "music-report",
+    "netmusic",
+    "H5"
+  ],
+  "author": "JohnieXu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johniexu/netmusic-music-report-2017/issues"
+  },
+  "homepage": "https://github.com/johniexu/netmusic-music-report-2017#readme"
+}
