@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>网易云音乐2017年度听歌报告</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/fullpage.js@2.9/dist/jquery.fullpage.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <section class="section page page-1 page-home">
+    <div class="bg-back"></div>
+    <div class="bg-white"></div>
+    <div class="title-wrapper">
+      <h1 class="title title-1"></h1>
+      <h1 class="title title-2"></h1>
+    </div>
+    <div class="nickname">南国的熊孩子</div>
+    <a class="button">
+      <span>立即<br>查看</span>
+    </a>
+    <div class="card"></div>
+  </section>
+  <section class="section page page-2">2</section>
+  <section class="section page page-3">3</section>
+  <section class="section page page-4">4</section>
+  <section class="section page page-5">5</section>
+  <section class="section page page-6">6</section>
+  <section class="section page page-7">7</section>
+  <section class="section page page-8">8</section>
+  <section class="section page page-9">9</section>
+  <section class="section page page-10">10</section>
+  <section class="section page page-11">11</section>
+  <section class="section page page-12">12</section>
+  <section class="section page page-13">13</section>
+  <!-- lib -->
+  <script src="https://unpkg.com/jquery@1.11.1/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/jplayer@2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+  <script src="https://unpkg.com/fullpage.js@2.9.5/dist/jquery.fullpage.js"></script>
+  <!-- components -->
+  <script src="./js/App.js"></script>
+  <!-- main -->
+  <script lang="javascript">
+    jQuery(document).ready(function($) {
+      var app = new App();
+      var ajaxData = {
+        username: '南国的熊孩子',
+        page1: {
+          songsCount: 345,
+          listenTime: '深夜',
+          like: '热爱分享'
+        },
+        page2: {
+          keywords: '世界',
+          count: 1467,
+          songsList: [{
+            lrc: '我以为这就是我所追求的世界',
+            singer: '胡彦斌Tiger Hu《天黑黑》'
+          },{
+            lrc: '就像早已忘情的世界',
+            singer: '齐秦《你的样子》'
+          },{
+            lrc: '说这个世界，对她这样的不多',
+            singer: '黄义达《那女孩对我说》'
+          },{
+            lrc: '你可以征服全世界',
+            singer: 'The Script《Hall Of Fame》'
+          },{
+            lrc: '去看海 绕世界流浪',
+            singer: '周杰伦《暗号》'
+          }]
+        },
+        page3: {
+          date: '5.28',
+          singer: 'Lorde',
+          song: '《Liability》',
+          count: 162
+        },
+        page4: {
+          date: '8.28',
+          time: '3:10',
+          singer: '陈粒',
+          song: '走马'
+        },
+        page5: {
+          count: 141
+        },
+        page6: {
+          count: 20,
+          song: '《Honey, Honey》'
+        },
+        page7: {
+          count: 38,
+          song: '《修炼爱情》'
+        },
+        page8: {
+          song: '《The End of the World》',
+          time: '1963.2'
+        },
+        page9: {
+          song: '《完》',
+          singer: '陈奕迅'
+        },
+        page10: {
+          count: 94
+        },
+        page11: {
+          singer: '周杰伦',
+          count: 411,
+          songsList: [{
+            song: '《黑色幽默》',
+            count: 54
+          },{
+            song: '《迷迭香》',
+            count: 44
+          },{
+            song: '《迷迭香》',
+            count: 44
+          },{
+            song: '《迷迭香》',
+            count: 44
+          },{
+            song: '《迷迭香》',
+            count: 44
+          },{
+            song: '《迷迭香》',
+            count: 44
+          },{
+            song: '《迷迭香》',
+            count: 44
+          },{
+            song: '《迷迭香》',
+            count: 44
+          },{
+            song: '《迷迭香》',
+            count: 44
+          },{
+            song: '《迷迭香》',
+            count: 44
+          }]
+        },
+        page12: {
+          count: 493
+        },
+        page13: {
+          avatar: 'http://p1.music.126.net/dVzgKX1ZoHaGGL41WN2Jjw==/18630125023093130.jpg?param=110y110',
+          songsList: [{
+            song: '《Liability》',
+            singer: 'Lorde'
+          },{
+            song: '《我喜欢上你时的内心活动》',
+            singer: '陈绮贞'
+          },{
+            song: '《我喜欢上你时的内心活动》',
+            singer: '陈绮贞'
+          },{
+            song: '《我喜欢上你时的内心活动》',
+            singer: '陈绮贞'
+          },{
+            song: '《我喜欢上你时的内心活动》',
+            singer: '陈绮贞'
+          },{
+            song: '《我喜欢上你时的内心活动》',
+            singer: '陈绮贞'
+          },{
+            song: '《我喜欢上你时的内心活动》',
+            singer: '陈绮贞'
+          },{
+            song: '《我喜欢上你时的内心活动》',
+            singer: '陈绮贞'
+          },{
+            song: '《我喜欢上你时的内心活动》',
+            singer: '陈绮贞'
+          },{
+            song: '《我喜欢上你时的内心活动》',
+            singer: '陈绮贞'
+          }]
+        },
+        page14: {
+          count: '14亿'
+        }
+      }
+      var page1Css = {
+        background: 'red'
+      }
+      var bg = {
+        bgLight: 'http://s3.music.126.net/nact/s/client/images/year2017/cover/cover_bg.jpg?91115a3fd39e5158b3387c3eec828793',
+        bgBack: 'http://s3.music.126.net/nact/s/client/images/year2017/cover/light.png?282c69970cb1ace98b08e594888bcc5e'
+      }
+      // app
+      //   .addPage('home', ajaxData.username, {
+      //     bgLight: bg.bgLight,
+      //     bgBack: bg.bgBack,
+      //     css: {
+      //       'background': 'url("https://s3.music.126.net/nact/s/client/images/year2017/common/background_white.png?e162bde220cafcf91003e7a1f7a07aa1") no-repeat',
+      //       'background-size': 'cover'
+      //   }})
+      //   .addPage('1', 'page 1')
+      //   .addPage('2', 'page 2');
+      // app.el.fullpage({
+      //   onLeave: function(index, nextIndex, direction) {
+      //     console.log(index + ' leave');
+      //   },
+      //   afterLoad: function(anchorLink, index) {
+      //     console.log(index + ' loaded');
+      //   }
+      // });
+      
+      $('body').fullpage({
+        onLeave: function(index, nextIndex, direction) {
+          console.log(index + ' leave direction: ' + direction);
+        },
+        afterLoad: function(anchorLink, index) {
+          console.log(index + ' loaded');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
