@@ -76,8 +76,32 @@ body {
     transform: translate(400px, 190px); 
   }
 }
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(12px);
+  }
+}
+@keyframes float-reverse {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-12px);
+  }
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  overflow: hidden;
+}
 /*page-1/page-home*/
-.bg-back {
+.page-1 .bg-back {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -86,7 +110,7 @@ body {
   background: url("http://s3.music.126.net/nact/s/client/images/year2017/cover/cover_bg.jpg?91115a3fd39e5158b3387c3eec828793") no-repeat;
   background-size: cover;
 }
-.bg-white {
+.page-1 .bg-white {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -95,34 +119,34 @@ body {
   background: url("http://s3.music.126.net/nact/s/client/images/year2017/cover/light.png?282c69970cb1ace98b08e594888bcc5e") no-repeat;
   background-size: cover;
 }
-.title-wrapper {
+.page-1 .title-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
 }
-.title-wrapper .title {
+.page-1 .title-wrapper .title {
   position: absolute;
   top: 56px;
   margin: 0;
   padding: 0;
 }
-.title-wrapper .title-1 {
+.page-1 .title-wrapper .title-1 {
   right: 80px;
   width: 84px;
   height: 293px;
   background: url("http://s3.music.126.net/nact/s/client/images/year2017/cover/title_1.png?aac72768a9f146e0c4712f9d4957ee86") no-repeat;
   background-size: 100% 100%;
 }
-.title-wrapper .title-2 {
+.page-1 .title-wrapper .title-2 {
   right: 30px;
   width: 36px;
   height: 341px;
   background: url("http://s3.music.126.net/nact/s/client/images/year2017/cover/title_2.png?593a6c108789e24a36b991c158126bcf") no-repeat;
   background-size: 100% 100%;
 }
-.nickname {
+.page-1 .nickname {
   position: absolute;
   bottom: 85px;
   left: 66px;
@@ -134,7 +158,7 @@ body {
   text-align: right;
   transform: rotateZ(-58deg) skewY(35deg);
 }
-.button {
+.page-1 .button {
   display: block;
   position: absolute;
   right: 55px;
@@ -149,14 +173,14 @@ body {
   vertical-align: middle;
   border-radius: 999px;
 }
-.button span {
+.page-1 .button span {
   box-sizing: border-box;
   position: relative;
   display: block;
   height: 100%;
   padding-top: 14px;
 }
-.button span::before {
+.page-1 .button span::before {
   content: "";
   display: block;
   position: absolute;
@@ -168,7 +192,7 @@ body {
   background-color: rgba(255,255,255,0.22);
   animation: halo 0.8s ease-in infinite alternate;
 }
-.button span::after {
+.page-1 .button span::after {
   content: "";
   display: block;
   position: absolute;
@@ -178,7 +202,7 @@ body {
   height: 130px;
   background: linear-gradient(rgba(255,255,255,0.2), rgb(255,255,255));
 }
-.card {
+.page-1 .card {
   position: absolute;
   bottom: 155px;
   left: 100px;
@@ -196,6 +220,7 @@ body {
   width: 100%;
   height: 0;
 }
+/*page-2*/
 .page-2 .night-1 {
   padding-bottom: 70.6667%;
 }
@@ -298,4 +323,157 @@ body {
   bottom: 0;
   background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p02_night/building_6.png?1e3a289d0cb78386e18ccfed50f3a3a4");
   background-size: cover;
+}
+/*page-3*/
+.page-3 .title {
+  position: absolute;
+  top: 7%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgb(34,34,34);
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+.page-3 .rock {
+  position: absolute;
+}
+.page-3 .rock-1 {
+  left: 0;
+  bottom: 75px;
+  width: 55px;
+  height: 70px;
+}
+.page-3 .rock-2 {
+  left: 0px;
+  bottom: 120px;
+  width: 59px;
+  height: 79px;
+}
+.page-3 .rock-3 {
+  right: 94px;
+  bottom: 30px;
+  width: 35px;
+  height: 35px;
+}
+.page-3 .rock-4 {
+  right: 0;
+  bottom: -15px;
+  width: 91px;
+  height: 117px;
+}
+.page-3 .rock-inner {
+  width: 100%;
+  height: 100%;
+}
+.page-3 .rock-inner::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  animation: float linear 1s infinite alternate;
+}
+.page-3 .rock-1 .rock-inner::before {
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p01/rock_1.png?8a740bdefa0b653329393d2e779a6270");
+  background-repeat: no-repeat;
+}
+.page-3 .rock-2 .rock-inner::before {
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p01/rock_2.png?7442ae10d160d2ca373c34b3dc5bfe39");
+  background-repeat: no-repeat;
+  animation-name: float-reverse;
+  animation-delay: 0.8s;
+}
+.page-3 .rock-3 .rock-inner::before {
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p01/rock_3.png?17d3b26af9011b9e71077df38676934f");
+  background-repeat: no-repeat;
+}
+.page-3 .rock-4 .rock-inner::before {
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p01/rock_4.png?7ad9babb64231b82f6363ed7592914ea");
+  background-repeat: no-repeat;
+  animation-name: float-reverse;
+  animation-delay: 0.8s;
+}
+.page-3 .mountain-wrapper {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  width: 366px;
+  height: 380px;
+  margin-left: -183px;
+}
+.page-3 .mountain {
+  width: 100%;
+  height: 100%;
+  background: url("http://s3.music.126.net/nact/s/client/images/year2017/p01/mountain.png?a036d93130ccf74d03002c376270585f") no-repeat;
+  background-size: cover;
+}
+.page-3 .mountain .word {
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  margin-left: -120px;
+  width: 240px;
+  height: 110px;
+  background: url("http://s3.music.126.net/nact/s/client/images/year2017/p01/word/20.png?c67ca565886ad94ffb3c95ab937a4735") no-repeat;
+  background-size: cover;
+}
+.page-3 .mountain .word .count {
+  position: absolute;
+  bottom: -10px;
+  right: -12px;
+  width: 78px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p01/border.png?09d2d1cfc1d547bdba30335dd9faa0df");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-3 .mountain .word .count .number {
+  display: block;
+  line-height: 24px;
+  font-size: 16px;
+  color: rgb(211,58,49);
+}
+
+.page-3 .mountain .word .count .man {
+  display: block;
+  position: absolute;
+  top: -28px;
+  right: -5px;
+  width: 19px;
+  height: 41px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p01/man.png?1b77412be14ab4c889588bef2f769c74");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-3 .mountain .content {
+  font-size: 14px;
+  color: rgb(34, 34, 34);
+}
+.page-3 .mountain .content .lyric-red {
+  color: rgb(211, 58, 49);
+}
+.page-3 .mountain .content .artist {
+  font-size: 12px;
+  color: rgba(34, 34, 34, 0.701961);
+}
+.page-3 .mountain .content {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page-3 .mountain .content .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-3 .mountain .content .list-item {
+  margin-top: 10px;
 }
