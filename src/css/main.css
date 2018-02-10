@@ -258,7 +258,6 @@ ul, li {
   }
   30% {
     opacity: 0.8;
-    transform: translateX(0);
   }
   100% {
     opacity: 0.8;
@@ -740,7 +739,16 @@ ul, li {
   background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p03/wave_2.png?bde3f4069f7bc4289ff0c6c5741b39cf");
   background-repeat: no-repeat;
   background-size: cover;
-  animation: wave1 1.8s 1.2s infinite alternate;
+  animation: wave1 1.8s 0.8s infinite alternate;
+}
+.page-4 .wave1-1 .ripple {
+  position: absolute;
+  top: 18px;
+  left: 5px;
+  width: 20px;
+  height: 165px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p03/ripple.png?e850181d6c7343b0e6cf77a7d5c92620");
+  background-size: cover;
 }
 .page-4 .wave1-2 {
   width: 149px;
