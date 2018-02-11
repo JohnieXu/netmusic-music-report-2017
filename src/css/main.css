@@ -372,8 +372,14 @@ body {
   line-height: 28px;
   word-break: break-all;
 }
+.para-1 {
+  margin-top: 10px;
+}
 .para-2 {
   margin-top: 20px;
+}
+.para-3 {
+  margin-top: 30px;
 }
 .mt-10 {
   margin: 0;
@@ -998,5 +1004,168 @@ body {
   height: 100%;
   padding-left: 20px;
   padding-right: 105px;
+  box-sizing: border-box;
+}
+/*page-5*/
+.page-5 .mountain {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.page-5 .mountain::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.page-5 .mountain-1 {
+  width: 729px;
+  height: 295px;
+  left: -209px;
+  bottom: -33px;
+}
+.page-5 .mountain-2 {
+  width: 615px;
+  height: 334px;
+  left: -57px;
+  bottom: -20px;
+}
+.page-5 .mountain-1::before {
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/mountain_bot.png?d80faf12c20feb03d0d28bb634d2631a");
+  background-size: 100%;
+}
+.page-5 .mountain-2::before {
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/mountain_top.png?7596b52e14f6375cbd2f7152ad40c8cc");
+  background-size: 100%;
+}
+.page-5 .tree {
+  position: absolute;
+}
+.page-5 .tree-1 {
+  width: 46px;
+  height: 269px;
+  right: 87px;
+  bottom: 0;
+}
+.page-5 .tree-1::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-size: 100%;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/tree_1.png?40c4b6a5c0b045868bea2305a04ce0d9");
+  /*transform-origin: center bottom 0;*/
+  /*transform: scale(0.5);*/
+}
+.page-5 .tree-2 {
+  width: 27px;
+  height: 146px;
+  left: 30px;
+  bottom: 0;
+}
+.page-5 .tree-2::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-size: 100%;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/tree_2.png?facf99479e24312d93d9b57a6c771ede");
+}
+.page-5 .tree-3 {
+  width: 46px;
+  height: 380px;
+  right: 30px;
+  bottom: 0;
+}
+.page-5 .tree-3::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-size: 100%;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/tree_3.png?e280ac8d67ecb0f585bd1cbdb4a6f2d7");
+}
+.page-5 .tree-4 {
+  width: 46px;
+  height: 342px;
+  left: 10px;
+  bottom: 0;
+}
+.page-5 .tree-4::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-size: 100%;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/tree_4.png?2399694e07ed3b6ba1a9e0cd0d7ba7f3");
+}
+.page-5 .tree-5 {
+  width: 22px;
+  height: 171px;
+  right: 40px;
+  top: 0;
+}
+.page-5 .tree-5::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-size: 100%;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/tree_5.png?29e7a5c3fbe31e8e990dc4b0139c1da0");
+}
+.page-5 .tree-6 {
+  width: 82px;
+  height: 583px;
+  right: 85px;
+  bottom: 0;
+}
+.page-5 .tree-6::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-size: 100%;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/tree_6.png?292bd8e55c33cbfa2c9dfed57c2da4e0");
+}
+.page-5 .tree-7 {
+  width: 34px;
+  height: 123px;
+  right: 105px;
+  bottom: 0;
+}
+.page-5 .tree-7::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-size: 100%;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/tree_7.png?c0136d6e96757595e6424254010d402d");
+}
+.page-5 .tree-8 {
+  width: 34px;
+  height: 295px;
+  right: 10px;
+  top: 80px;
+}
+.page-5 .tree-8::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-size: 100%;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p04/tree_8.png?2f878bebaa1810bb00da8dd0ddd3e395");
+}
+.page-5 .content {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 100px;
   box-sizing: border-box;
 }
