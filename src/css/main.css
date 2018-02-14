@@ -528,6 +528,14 @@ ul, li {
   97.87% { background-position: -600px -200px; }
   100% { background-position: -700px -200px; }
 }
+@keyframes sunlight-rotate {
+  0% {
+    transform: rotateZ(2deg);
+  }
+  100% {
+    transform: rotateZ(-2deg);
+  }
+}
 body {
   font-size: 24px;
 }
@@ -553,6 +561,9 @@ body {
 }
 .para-4 {
   margin-top: 40px;
+}
+.para-15 {
+  margin-top: 15px;
 }
 .mt-10 {
   margin: 0;
@@ -649,6 +660,14 @@ body {
   }
   100% {
     transform: rotateZ(2deg);
+  }
+}
+@keyframes sunlight-rotate {
+  0% {
+    transform: rotateZ(3deg);
+  }
+  100% {
+    transform: rotateZ(-3deg);
   }
 }
 /*page-1/page-home*/
@@ -1539,6 +1558,130 @@ body {
   position: absolute;
   top: 28.5%;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.page-7 .mountain {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+}
+.page-7 .mountain-1 {
+  left: auto;
+  right: 0px;
+  width: 218px;
+  height: 38px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/mountain_1.png?684c93d1dd919b2f66b72f45d9fc6d53");
+  z-index: 8;
+}
+.page-7 .mountain-2 {
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 23.6%;
+  z-index: 7;
+}
+.page-7 .mountain-2::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/mountain_2.png?bc122617111e6283e096bf58d744e407");
+  background-size: cover;
+}
+.page-7 .mountain-2 .man {
+  position: absolute;
+  top: -35px;
+  left: 20px;
+  width: 12px;
+  height: 40px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/man.png?2a6f238af95aae6bee34e8fe40fdbd40");
+  z-index: 6;
+  background-size: cover;
+}
+.page-7 .mountain-3 {
+  left: 0px;
+  width: 375px;
+  height: 67px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/mountain_3.png?e90090084627db7fbe620146ea186850");
+  z-index: 5;
+}
+.page-7 .mountain-4 {
+  left: 0px;
+  width: 375px;
+  height: 92px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/mountain_4.png?b6e2ea96f90db6ccfa2babf2054f6a4f");
+  z-index: 4;
+}
+.page-7 .mountain-5 {
+  bottom: 30px;
+  right: 0px;
+  width: 80px;
+  height: 50px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/mountain_5.png?9c5a4ad0c4d2ca20d7626c8b614b3377");
+  z-index: 3;
+}
+.page-7 .mountain-6 {
+  bottom: 70px;
+  left: 90px;
+  width: 144px;
+  height: 67px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/mountain_6.png?47aadd483a1180a70cd0231ca07997b2");
+  z-index: 2;
+}
+.page-7 .mountain-7 {
+  bottom: 125px;
+  left: 50px;
+  width: 66px;
+  height: 28px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/mountain_7.png?4156ef3cca5e9362b46582fe2ee15827");
+  z-index: 1;
+}
+.page-7 .light-wrapper {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+}
+.page-7 .light {
+  position: absolute;
+  background-size: cover;
+  animation: sunlight-rotate 2s linear 0.8s infinite alternate;
+  transform: rotateZ(3deg);
+  transform-origin: right top 0;
+}
+.page-7 .light-1 {
+  top: 19px;
+  right: 16px;
+  width: 383px;
+  height: 597px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/light_1.png?c526553527118c32557bf7dc7f58aa78");
+}
+.page-7 .light-2 {
+  top: 30px;
+  right: 16px;
+  width: 410px;
+  height: 500px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/light_2.png?a54d859723a8a1cff7dad79c9d773dbe");
+  transition-delay: 1.2s;
+}
+.page-7 .sun {
+  position: absolute;
+  top: 15px;
+  right: 11px;
+  width: 62px;
+  height: 62px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p06/sun.png?99ccbfaa90bc7333452e3d926f260689");
+  background-size: cover;
+}
+.page-7 .content {
+  position: absolute;
+  top: 28%;
+  left: 0;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
