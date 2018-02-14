@@ -670,6 +670,51 @@ body {
     transform: rotateZ(-3deg);
   }
 }
+@keyframes roll {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+@keyframes man-disc { 
+  0% { background-position: 0px 0px; }
+  2.94% { background-position: -50px 0px; }
+  5.88% { background-position: -100px 0px; }
+  8.82% { background-position: -150px 0px; }
+  11.76% { background-position: -200px 0px; }
+  14.71% { background-position: -250px 0px; }
+  17.65% { background-position: -300px 0px; }
+  20.59% { background-position: -350px 0px; }
+  23.53% { background-position: -400px 0px; }
+  26.47% { background-position: -450px 0px; }
+  29.41% { background-position: -500px 0px; }
+  32.35% { background-position: -550px 0px; }
+  35.29% { background-position: -600px 0px; }
+  38.24% { background-position: -650px 0px; }
+  41.18% { background-position: -700px 0px; }
+  44.12% { background-position: -750px 0px; }
+  47.06% { background-position: -800px 0px; }
+  50% { background-position: -850px 0px; }
+  52.94% { background-position: -900px 0px; }
+  55.88% { background-position: -950px 0px; }
+  58.82% { background-position: -1000px 0px; }
+  61.76% { background-position: -1050px 0px; }
+  64.71% { background-position: -1100px 0px; }
+  67.65% { background-position: -1150px 0px; }
+  70.59% { background-position: -1200px 0px; }
+  73.53% { background-position: -1250px 0px; }
+  76.47% { background-position: -1300px 0px; }
+  79.41% { background-position: -1350px 0px; }
+  82.35% { background-position: -1400px 0px; }
+  85.29% { background-position: -1450px 0px; }
+  88.24% { background-position: -1500px 0px; }
+  91.18% { background-position: -1550px 0px; }
+  94.12% { background-position: -1600px 0px; }
+  97.06% { background-position: -1650px 0px; }
+  100% { background-position: -1700px 0px; }
+}
 /*page-1/page-home*/
 .page-1 .bg-back {
   height: 100%;
@@ -1682,6 +1727,75 @@ body {
   position: absolute;
   top: 28%;
   left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.page-8 .disc {
+  position: absolute;
+  bottom: 19px;
+  right: 0;
+  width: 189px;
+  height: 283px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p07/disc.png?2476c40dbb98d9de17bcc19f94c9bd11");
+  background-size: cover;
+  transform-origin: right bottom 0;
+}
+.page-8 .disc .roll {
+  position: absolute;
+  left: 40px;
+  top: 144px;
+  width: 115px;
+  height: 115px;
+  transform: translateZ(200px) rotateY(6deg) rotateX(70deg);
+}
+.page-8 .disc .roll::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p07/roll.png?89413bf25178300f71c49eac42b04f80");
+  background-size: cover;
+  animation: roll 4s linear infinite;
+}
+.page-8 .disc .man {
+  position: absolute;
+  bottom: 18px;
+  right: 38px;
+  width: 50px;
+  height: 90px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p07/man_repeat.png?38dd7495e388ff3ddad4f7e401e4b632");
+  background-size: cover;
+  transform-origin: left top 0;
+  animation: man-disc 1.42s steps(1, end) infinite;
+  transform: scale(0.5);
+}
+.page-8 .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 27.2%;
+}
+.page-8 .bottom::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p07/back.png?3380f3692fe3f6714ba02beb1092881d");
+  background-size: cover;
+}
+.page-8 .content {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
