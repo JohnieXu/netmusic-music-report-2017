@@ -336,6 +336,32 @@
   97.87% { background-position: -600px -240px; }
   100% { background-position: -700px -240px; }
 }
+@keyframes man-wall-repeat { 
+  0% { background-position: 0px 0px; }
+  4.35% { background-position: -103px 0px; }
+  8.7% { background-position: -206px 0px; }
+  13.04% { background-position: -309px 0px; }
+  17.39% { background-position: -412px 0px; }
+  21.74% { background-position: -515px 0px; }
+  26.09% { background-position: -618px 0px; }
+  30.43% { background-position: -721px 0px; }
+  34.78% { background-position: -824px 0px; }
+  39.13% { background-position: -927px 0px; }
+  43.48% { background-position: -1030px 0px; }
+  47.83% { background-position: -1133px 0px; }
+  52.17% { background-position: -1236px 0px; }
+  56.52% { background-position: -1339px 0px; }
+  60.87% { background-position: -1442px 0px; }
+  65.22% { background-position: -1545px 0px; }
+  69.57% { background-position: -1648px 0px; }
+  73.91% { background-position: -1751px 0px; }
+  78.26% { background-position: -1854px 0px; }
+  82.61% { background-position: 0px -95px; }
+  86.96% { background-position: -103px -95px; }
+  91.3% { background-position: -206px -95px; }
+  95.65% { background-position: -309px -95px; }
+  100% { background-position: -412px -95px; }
+}
 ul, li {
   list-style: none;
   margin: 0;
@@ -823,6 +849,22 @@ body {
 @keyframes bottle-vertical { 
   0% { transform: translateY(-4px); }
   100% { transform: translateY(4px); }
+}
+@keyframes wave-horizontal-reverse { 
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(-40px); }
+}
+@keyframes wave-horizontal { 
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(40px); }
+}
+@keyframes cloud-horizontal { 
+  0% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+@keyframes cloud-horizontal-reverse { 
+  0% { transform: translateX(5px); }
+  100% { transform: translateX(-5px); }
 }
 /*page-1/page-home*/
 .page-1 .bg-back {
@@ -2141,4 +2183,172 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+}
+/*page-12*/
+.page-12 .info {
+  position: absolute;
+  top: 38px;
+  left: 25px;
+  right: 17px;
+}
+.page-12 .photo-wrapper {
+  position: absolute;
+  width: 226px;
+  height: 173px;
+}
+.page-12 .photo {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p12/photo.png?4743a9d8949cbb04fa3e290454c705d2");
+  background-size: cover;
+  transform-origin: left top 0;
+}
+.page-12 .photo .pic {
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  width: 91px;
+  height: 91px;
+}
+.page-12 .photo .man {
+  position: absolute;
+  top: 77px;
+  left: 121px;
+  width: 103px;
+  height: 95px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p12/man_repeat.png?5df8cb542bbad85964ca6f0c47df9a44");
+  transform-origin: left top 0;
+  transform: scale(0.5);
+  animation: man-wall-repeat 0.96s steps(1, end) infinite;
+}
+.page-12 .content {
+  position: absolute;
+  top: 125px;
+  left: 95px;
+  right: 0px;
+  text-align: right;
+}
+.page-12 .content .name {
+  font-size: 23px;
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: normal;
+}
+.page-12 .waves {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.page-12 .wave{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-size: cover;
+  animation: wave-horizontal-reverse 2s linear 2s infinite alternate;
+}
+.page-12 .wave-1 {
+  bottom: 30px;
+  width: 718px;
+  height: 264px;
+  margin-left: -420px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p12/wave_1.png?bc8b8faa1e73e151ae7b9fa4a7dcd611");
+  z-index: 4;
+}
+.page-12 .wave-2 {
+  bottom: 60px;
+  width: 662px;
+  height: 240px;
+  margin-left: -340px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p12/wave_2.png?b7652a05a97a8a1325852d3d5bb69661");
+  z-index: 3;
+  animation-name: wave-horizontal;
+}
+.page-12 .wave-3 {
+  bottom: 240px;
+  width: 688px;
+  height: 115px;
+  margin-left: -388px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p12/wave_3.png?5403484756e2b7b9f24adf2f2d080104");
+  z-index: 2;
+}
+.page-12 .wave-4 {
+  bottom: 330px;
+  width: 754px;
+  height: 88px;
+  margin-left: -460px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p12/wave_4.png?25f79b1444bc7e3d0ff62787502b2e4b");
+  z-index: 1;
+  animation-name: wave-horizontal;
+}
+.page-12 .lines {
+  position: absolute;
+  bottom: 120px;
+  left: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  z-index: 9;
+}
+.page-12 .line {
+  list-style: none;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgb(34, 34, 34);
+}
+.page-12 .line .text {
+  display: inline-block;
+  position: relative;
+  animation: cloud-horizontal 2s linear infinite alternate;
+}
+.page-12 .line-1 .text {
+  left: 42px;
+  animation-delay: 0.5s;
+}
+.page-12 .line-2 .text {
+  left: 192px;
+  animation-delay: 0.6s;
+  animation-name: cloud-horizontal-reverse;
+}
+.page-12 .line-3 .text {
+  left: 92px;
+  animation-delay: 0.7s;
+}
+.page-12 .line-4 .text {
+  left: 156px;
+  animation-delay: 0.8s;
+  animation-name: cloud-horizontal-reverse;
+}
+.page-12 .line-5 .text {
+  left: 7px;
+  animation-delay: 0.9s;
+}
+.page-12 .line-6 .text {
+  left: 197px;
+  animation-delay: 1s;
+  animation-name: cloud-horizontal-reverse;
+}
+.page-12 .line-7 .text {
+  left: 127px;
+  animation-delay: 1.1s;
+}
+.page-12 .line-8 .text {
+  left: 162px;
+  animation-delay: 1.2s;
+  animation-name: cloud-horizontal-reverse;
+}
+.page-12 .line-9 .text {
+  left: 16px;
+  animation-delay: 1.3s;
+}
+.page-12 .line-10 .text {
+  left: 176px;
+  animation-delay: 1.4s;
+  animation-name: cloud-horizontal-reverse;
 }
