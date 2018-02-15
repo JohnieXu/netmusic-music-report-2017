@@ -2075,3 +2075,70 @@ body {
   padding-right: 20px;
   box-sizing: border-box;
 }
+/*page-11*/
+.page-11 .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 89.7333%;
+}
+.page-11 .bottom::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p10/back.png?dfbab5869c1ee6f585bc853699ced2eb");
+  background-size: cover;
+}
+.page-11 .orb {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 56px;
+  height: 40px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p10/orb_1.png?aee797bf2b73d888084fcd544386eb73");
+  background-size: cover;
+}
+.page-11 .planet-wrapper {
+  position: absolute;
+  bottom: 39px;
+  right: -10px;
+  width: 335px;
+  height: 160px;
+}
+.page-11 .planet-wrapper .sun {
+  position: absolute;
+  left: 128px;
+  width: 98px;
+  height: 49px;
+  background-size: cover;
+}
+.page-11 .planet-wrapper .sun-1 {
+  top: 54px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p10/sun.png?8f6c9ed2f878ef568a540e6f41c288a8");
+  background-position: 0 -49px;
+}
+.page-11 .planet-wrapper .sun-2 {
+  top: 5px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p10/sun.png?8f6c9ed2f878ef568a540e6f41c288a8");
+}
+.page-11 .planet-wrapper .spin {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.page-11 .content {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
