@@ -866,6 +866,129 @@ body {
   0% { transform: translateX(5px); }
   100% { transform: translateX(-5px); }
 }
+@keyframes glass-vertical { 
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(12px); }
+}
+@keyframes glass-vertical-reverse { 
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-12px); }
+}
+@keyframes glass-rotate { 
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(5deg); }
+}
+@keyframes sand { 
+  0% { background-position: 0px 0px; }
+  4.35% { background-position: -35px 0px; }
+  8.7% { background-position: -70px 0px; }
+  13.04% { background-position: -105px 0px; }
+  17.39% { background-position: -140px 0px; }
+  21.74% { background-position: -175px 0px; }
+  26.09% { background-position: -210px 0px; }
+  30.43% { background-position: -245px 0px; }
+  34.78% { background-position: -280px 0px; }
+  39.13% { background-position: -315px 0px; }
+  43.48% { background-position: -350px 0px; }
+  47.83% { background-position: -385px 0px; }
+  52.17% { background-position: -420px 0px; }
+  56.52% { background-position: -455px 0px; }
+  60.87% { background-position: -490px 0px; }
+  65.22% { background-position: -525px 0px; }
+  69.57% { background-position: -560px 0px; }
+  73.91% { background-position: -595px 0px; }
+  78.26% { background-position: -630px 0px; }
+  82.61% { background-position: -665px 0px; }
+  86.96% { background-position: -700px 0px; }
+  91.3% { background-position: -735px 0px; }
+  95.65% { background-position: -770px 0px; }
+  100% { background-position: -805px 0px; }
+}
+@keyframes sand-shrink { 
+  0% { transform: scale(1); }
+  100% { transform: scale(0.3); }
+}
+@keyframes man-glass { 
+  0% { background-position: 0px 0px; }
+  3.57% { background-position: -78px 0px; }
+  7.14% { background-position: -156px 0px; }
+  10.71% { background-position: -234px 0px; }
+  14.29% { background-position: -312px 0px; }
+  17.86% { background-position: -390px 0px; }
+  21.43% { background-position: -468px 0px; }
+  25% { background-position: -546px 0px; }
+  28.57% { background-position: -624px 0px; }
+  32.14% { background-position: -702px 0px; }
+  35.71% { background-position: -780px 0px; }
+  39.29% { background-position: -858px 0px; }
+  42.86% { background-position: -936px 0px; }
+  46.43% { background-position: -1014px 0px; }
+  50% { background-position: -1092px 0px; }
+  53.57% { background-position: -1170px 0px; }
+  57.14% { background-position: -1248px 0px; }
+  60.71% { background-position: -1326px 0px; }
+  64.29% { background-position: -1404px 0px; }
+  67.86% { background-position: -1482px 0px; }
+  71.43% { background-position: -1560px 0px; }
+  75% { background-position: -1638px 0px; }
+  78.57% { background-position: -1716px 0px; }
+  82.14% { background-position: -1794px 0px; }
+  85.71% { background-position: -1872px 0px; }
+  89.29% { background-position: 0px -68px; }
+  92.86% { background-position: -78px -68px; }
+  96.43% { background-position: -156px -68px; }
+  100% { background-position: -234px -68px; }
+}
+@keyframes man-glass-repeat { 
+  0% { background-position: 0px 0px; }
+  2.13% { background-position: -78px 0px; }
+  4.26% { background-position: -156px 0px; }
+  6.38% { background-position: -234px 0px; }
+  8.51% { background-position: -312px 0px; }
+  10.64% { background-position: -390px 0px; }
+  12.77% { background-position: -468px 0px; }
+  14.89% { background-position: -546px 0px; }
+  17.02% { background-position: -624px 0px; }
+  19.15% { background-position: -702px 0px; }
+  21.28% { background-position: -780px 0px; }
+  23.4% { background-position: -858px 0px; }
+  25.53% { background-position: -936px 0px; }
+  27.66% { background-position: -1014px 0px; }
+  29.79% { background-position: -1092px 0px; }
+  31.91% { background-position: -1170px 0px; }
+  34.04% { background-position: -1248px 0px; }
+  36.17% { background-position: -1326px 0px; }
+  38.3% { background-position: -1404px 0px; }
+  40.43% { background-position: -1482px 0px; }
+  42.55% { background-position: -1560px 0px; }
+  44.68% { background-position: -1638px 0px; }
+  46.81% { background-position: -1716px 0px; }
+  48.94% { background-position: -1794px 0px; }
+  51.06% { background-position: -1872px 0px; }
+  53.19% { background-position: 0px -68px; }
+  55.32% { background-position: -78px -68px; }
+  57.45% { background-position: -156px -68px; }
+  59.57% { background-position: -234px -68px; }
+  61.7% { background-position: -312px -68px; }
+  63.83% { background-position: -390px -68px; }
+  65.96% { background-position: -468px -68px; }
+  68.09% { background-position: -546px -68px; }
+  70.21% { background-position: -624px -68px; }
+  72.34% { background-position: -702px -68px; }
+  74.47% { background-position: -780px -68px; }
+  76.6% { background-position: -858px -68px; }
+  78.72% { background-position: -936px -68px; }
+  80.85% { background-position: -1014px -68px; }
+  82.98% { background-position: -1092px -68px; }
+  85.11% { background-position: -1170px -68px; }
+  87.23% { background-position: -1248px -68px; }
+  89.36% { background-position: -1326px -68px; }
+  91.49% { background-position: -1404px -68px; }
+  93.62% { background-position: -1482px -68px; }
+  95.74% { background-position: -1560px -68px; }
+  97.87% { background-position: -1638px -68px; }
+  100% { background-position: -1716px -68px; }
+}
 /*page-1/page-home*/
 .page-1 .bg-back {
   height: 100%;
@@ -2351,4 +2474,137 @@ body {
   left: 176px;
   animation-delay: 1.4s;
   animation-name: cloud-horizontal-reverse;
+}
+/*page-13*/
+.page-13 .bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 46.5333%;
+}
+.page-13 .bottom::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p13/back.png?e944daf47142b98c424e5ea804c12393");
+  background-size: cover;
+}
+.page-13 .glass {
+  position: absolute;
+  background-size: cover;
+}
+.page-13 .glass-1 {
+  top: -13px;
+  left: 85px;
+  width: 189px;
+  height: 110px;
+}
+.page-13 .glass .s {
+  width: 100%;
+  height: 100%;
+}
+.page-13 .glass .c {
+  width: 100%;
+  height: 100%;
+}
+.page-13 .glass-1 .c {
+  animation: glass-vertical 2s linear 3s infinite alternate;
+}
+.page-13 .glass-1 .c::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p13/glass_1.png?744e137f1aca3528056b408d9e45a623");
+  background-size: cover;
+  transform-origin: 94px 45px 0px;
+  animation: glass-rotate 2s linear infinite alternate;
+}
+.page-13 .glass-2 {
+  top: 315px;
+  left: 0px;
+  width: 113px;
+  height: 134px;
+}
+.page-13 .glass-2 .c::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p13/glass_2.png?7a3fec29072feb806b1f866e2cccee7b");
+  background-size: cover;
+  animation: glass-vertical-reverse 2s linear infinite alternate;
+}
+.page-13 .glass-3 {
+  bottom: 35px;
+  right: 25px;
+  width: 159px;
+  height: 337px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p13/glass_3.png?67c5b1c2cb03a893f0c72b883712b61e");
+  transform-origin: right bottom 0;
+}
+.page-13 .glass-3 .sand {
+  position: absolute;
+  background-size: cover;
+}
+.page-13 .glass-3 .sand-1 {
+  top: 167px;
+  left: 70px;
+  width: 35px;
+  height: 200px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p13/sand_2.png?6015d45d19a32983e0031a8e6e8b52ec");
+  transform-origin: left top 0;
+  transform: scale(0.5);
+  animation: sand 1s steps(1, end) infinite;
+}
+.page-13 .glass-3 .sand-2 {
+  top: 148px;
+  left: 56px;
+  width: 48px;
+  height: 30px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p13/sand_1.png?8eace33174f5e0b607b6b740510b84f5");
+  transform-origin: 23px bottom 0;
+  animation: sand-shrink 10s ease-in forwards;
+}
+.page-13 .glass-3 .man {
+  position: absolute;
+  top: 270px;
+  left: -30px;
+  width: 78px;
+  height: 68px;
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p13/man_repeat.png?96c1bd8763c6a9188ef7022f6873c16f");
+  animation: man-glass-repeat 2s steps(1, end) infinite;
+  transform-origin: left top 0;
+  transform: scale(0.5);
+}
+.page-13 .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 66.8%;
+}
+.page-13 .line::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-image: url("http://s3.music.126.net/nact/s/client/images/year2017/p13/line.png?d74b4e7abbf540f882cecb55bfc3f7e3");
+  background-size: cover;
+}
+.page-13 .content {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
